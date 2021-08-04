@@ -1,5 +1,7 @@
 # task2
-![taskgit](https://user-images.githubusercontent.com/36539534/128205502-ba138fc0-2458-48e9-b1d0-b834cdcbfd98.gif)
+
+
+<img src="https://user-images.githubusercontent.com/36539534/128205502-ba138fc0-2458-48e9-b1d0-b834cdcbfd98.gif" width="300">
 
 
 A new Flutter project.
