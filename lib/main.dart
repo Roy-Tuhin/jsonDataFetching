@@ -17,11 +17,11 @@ class Dashboard extends StatefulWidget {
 class _DashboardState extends State<Dashboard> {
   List posts;
 
-  Future<bool> _getPosts() async {
+  Future<bool> _getPosts() async {                                               // Our method 'async' because it may delay to get the data from internet
     String serviceUrl = "https://jsonplaceholder.typicode.com/users";
-    var response = await http.get(serviceUrl);
+    var response = await http.get(serviceUrl);                                 // storing our json data to a new variable 'response'
     setState(() {
-      posts = json.decode(response.body.toString());
+      posts = json.decode(response.body.toString());                          // decoding our json data to string
     });
     return true;
   }
@@ -42,7 +42,7 @@ class _DashboardState extends State<Dashboard> {
           padding: new EdgeInsets.all(8.0),
           itemCount: posts.length == null
               ? 0
-              : posts.length, // how many data in our list
+              : posts.length,                                                         // how many data in our list
           itemBuilder: (BuildContext context, int index) {
             return Card(
               shadowColor: Color(0xFF678756),
